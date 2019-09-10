@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Miko Jimenez">
+<title>HW 1</title>
+<style>
+   body {
+      font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+      margin-left: 2%;
+      margin-right: 2%;
+   }
+   h1 {
+      text-align: center;
+      color: white;
+      background-color: black;
+      padding: 25px;
+   }
+   hr {
+      clear: both;
+   }
+   img, iframe, hr {
+      display: block;
+   }
+</style>
+</head>
+
+<body>
+   <h1>Resume</h1>
+   <img width="200px" height="200px" src="your_photo.jpg" alt="Dir Error" align="right">
+   <h2>Miko Jimenez</h2>
+   <h3>(407) 575-6203</h3>
+   <hr>
+   
+   <h3>Career Objective</h3>
+   <p>Web Developer &amp; Web Developer</p>
+   
+   <h3>Interests</h3>
+   <ul>
+      <li>Photography</li>
+      <li>Web Design</li>
+   </ul>
+   
+   <h3>Skillset</h3>
+   <!-- Emulates function described in screenshots-->
+   <a onClick="document.getElementById('skillsFrame').setAttribute('src','skills.html'); return false;" href="skills.html">Tap to view my skills.</a>
+   <iframe src="" name="skillsFrame" id="skillsFrame" width="100%;" height="200px;"></iframe>
+   
+   <p>Education</p>
+   <ol type="1">
+      <li>Bishop Moore High School</li>
+      <li>University of Central Florida</li>
+   </ol>
+   <h2>Miko</h2>
+</body>
+</html>
