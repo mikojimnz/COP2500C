@@ -1,0 +1,40 @@
+/* CSS Document */
+a {
+  color: darkgoldenrod;
+  font-style: oblique;
+}
+body {
+  font-family: Times New Roman, serif;
+  background-color: #490500;
+}
+footer {
+  background-color: #7E0A00;
+  padding: 20px;
+}
+h1 {
+  text-shadow: 2px 2px 15px #000;
+}
+h3 {
+  color: gold;
+  font-size: 2.5vw;
+}
+header {
+  background-color: #7E0A00;
+  border-radius: 15px;
+  box-shadow: 5px 5px 50px #000;
+  color: gold;
+  font-size: 3vw;
+  padding: 20px;
+  text-align: center;
+}
+p {
+  color: white;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+table {
+  color: white;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+#oscar {
+  padding-top: 20px;
+}
