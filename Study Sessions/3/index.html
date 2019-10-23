@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+  <!--
+Made By Miko Jimenez for UCF COP2500C
+JS Refresher
+-->
+  <meta charset="utf-8">
+  <title>JS Practice Study Session 3</title>
+  <meta name="description" content="JS Practice Study Session 3">
+  <meta name="author" content="Miko Jimenez">
+  <link href='https://fonts.googleapis.com/css?family=Lato:200,300,400,500' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <!--Jumbotron-->
+  <div class="row mt-5 mb-5">
+    <div class="col col-1"></div>
+    <header class="col col-10">
+      <div class="jumbotron">
+        <h1 class="display-3"><i class="display-3 fab fa-js" style="color: #e9d556;"></i> console.<span style="color: #b07bd3;">log</span>(<span style="color: #d89333;">"Hello, world!"</span>);<span class="animated infinite flash">|</span></h1>
+        <p class="lead">UCF COP2500C Study Session 3: Programing Fundamentals &amp; JavaScript</p>
+        <p>By Miko Jimenez</p>
+        <hr class="my-4">
+        <h4>Fork this pen!
+          <h4>
+            </h3>Please only modify areas that are labeled for editing. Answers will be discussed at the meeting.</h3>
+            <p class="mt-5">Made with these external CSS &amp; JS Libraries:</p>
+            <ul>
+              <li>Animate.css</li>
+              <li>Bootstrap 4</li>
+              <li>Font-Awsome</li>
+              <li>JQuery</li>
+            </ul>
+      </div>
+    </header>
+    <div class="col col-1"></div>
+
+  </div>
+
+  <!--IFs-->
+  <div class="row mt-5">
+    <div class="col col-1"></div>
+    <div class="col col-10">
+      <!-- Section Header -->
+      <div class="col col-12 mb-5">
+        <h1 class="text-center"><i>if</i> Statments</h1>
+      </div>
+
+      <!-- Prac1 -->
+      <div class="col col-12 text-center mb-5">
+        <h2>Practice 1</h2>
+        <h3>Multiple Conditions</h3>
+        <h5>Edit practiceOne() in the JS panel then enter your name here to test it.
+          <h5>
+      </div>
+
+      <div class="col col-12 mb-5">
+        <form action="" method="post" name="prac1" class="rounded">
+          <div class="row">
+            <div class="form-group col col-6">
+              <label for="fname">First Name</label>
+              <input type="text" class="form-control" id="fname" placeholder="John" required>
+            </div>
+            <div class="form-group col col-6">
+              <label for="lname">Last Name</label>
+              <input type="text" class="form-control" id="lname" placeholder="Smith" required>
+            </div>
+          </div>
+          <button type="submit" name="submit" onclick="checkOne($('#fname').val().trim(),$('#lname').val().trim()); return false;" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="alert alert-success mt-2" role="alert" id="alert_prac1_yes">
+          <h4 class="alert-heading">Well done!</h4>
+          <p>Let's keep going!</p>
+        </div>
+        <div class="alert alert-warning" role="alert" id="alert_prac1_no">
+          <h4 class="alert-heading">Uh-oh!</h4>
+          <p>Something doesn't look right. Check if your input matches the expected text.</p>
+        </div>
+      </div>
+
+      <!-- Prac2 -->
+      <div class="col col-12 text-center mb-5 mt-5">
+        <h2>Practice 2</h2>
+        <h3>Multiple Outputs</h3>
+        <h5>Edit practiceTwo() in the JS panel and enter your age to test your function.
+          <h5>
+      </div>
+
+      <div class="col col-12">
+        <form action="" method="post" name="prac2" class="rounded">
+          <div class="form-group">
+            <label for="age">How old are you?</label>
+            <input type="number" class="form-control" id="age" required>
+          </div>
+          <button type="submit" name="submit" onclick="checkTwo($('#age').val()); return false;" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="alert alert-secondary" role="alert" id="alert_prac2">
+          <h4 class="alert-heading">Output Report</h4>
+          <p>Your Value: <span id="pr2r0a"></span></p>
+          <p>Result: <span id="pr2r0b"></span></p>
+          <br>
+          <p>Conditional Test Results</p>
+          <ol>
+            <li>
+              <p>-99 <span class="fa" id="pr2r1"></span>
+                <p>
+            </li>
+            <li>
+              <p>17 <span class="fa" id="pr2r2"></span>
+                <p>
+            </li>
+            <li>
+              <p>18 <span class="fa" id="pr2r3"></span>
+                <p>
+            </li>
+            <li>
+              <p>21 <span class="fa" id="pr2r4"></span>
+                <p>
+            </li>
+            <li>
+              <p>24 <span class="fa" id="pr2r5"></span>
+                <p>
+            </li>
+            <li>
+              <p>1000 <span class="fa" id="pr2r6"></span>
+                <p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="col col-1"></div>
+  </div>
+
+  <!--Loops-->
+  <div class="row mt-5">
+    <div class="col col-1"></div>
+    <div class="col col-10">
+      <!-- Section Header -->
+      <div class="col col-12 mb-5">
+        <h1 class="text-center"><i>for</i>, <i>while</i> &amp; <i>do while</i> Loops</h1>
+      </div>
+
+      <!-- Prac3 -->
+      <div class="col col-12 text-center mb-5">
+        <h2>Practice 3</h2>
+        <h3>For Loop</h3>
+        <h5>Edit practiceThree() in the JS panel and enter a number to test your function.
+          <h5>
+      </div>
+
+      <div class="col col-12 mb-5">
+        <form action="" method="post" name="prac3" class="rounded">
+          <div class="form-group">
+            <label for="ranNum">Enter a random number from 10 to 100.</label>
+            <input type="number" class="form-control" id="ranNum" required>
+          </div>
+          <button type="submit" name="submit" onclick="checkThree($('#ranNum').val()); return false;" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="alert alert-success mt-2" role="alert" id="alert_prac3_yes">
+          <h4 class="alert-heading">Well done!</h4>
+          <p id="pr3r0">$Congrats Text$</p>
+        </div>
+        <div class="alert alert-warning" role="alert" id="alert_prac3_no">
+          <h4 class="alert-heading">Uh-oh!</h4>
+          <p id="pr3r1">Unexpected Error</p>
+        </div>
+      </div>
+
+      <!-- Prac4 -->
+      <div class="col col-12 text-center mb-5">
+        <h2>Practice 4</h2>
+        <h3>While Loop</h3>
+        <h5>Edit practiceFour() in the JS panel and enter a number to test your function.
+          <h5>
+      </div>
+
+      <div class="col col-12 mb-5">
+        <form action="" method="post" name="prac4" class="rounded">
+          <div class="form-group">
+            <label for="subFromA">Enter a random number from 1 to 10.</label>
+            <input type="number" class="form-control" id="subFromA" required>
+          </div>
+          <button type="submit" name="submit" onclick="checkFour($('#subFromA').val()); return false;" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="alert alert-success mt-2" role="alert" id="alert_prac4_yes">
+          <h4 class="alert-heading">Well done!</h4>
+          <p id="pr4r0">$Congrats Text$</p>
+        </div>
+        <div class="alert alert-warning" role="alert" id="alert_prac4_no">
+          <h4 class="alert-heading">Uh-oh!</h4>
+          <p id="pr4r1">Unexpected Error</p>
+        </div>
+      </div>
+
+      <!-- Prac5 -->
+      <div class="col col-12 text-center mb-5">
+        <h2>Practice 5</h2>
+        <h3>Do While Loop</h3>
+        <h5>Edit practiceFive() in the JS panel and enter a number to test your function.
+          <h5>
+      </div>
+
+      <div class="col col-12 mb-5">
+        <form action="" method="post" name="prac5" class="rounded">
+          <div class="form-group">
+            <label for="subFromB">Enter a random number from 3 to 10.</label>
+            <input type="number" class="form-control" id="subFromB" required>
+          </div>
+          <button type="submit" name="submit" onclick="checkFive($('#subFromB').val()); return false;" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="alert alert-success mt-2" role="alert" id="alert_prac5_yes">
+          <h4 class="alert-heading">Well done!</h4>
+          <p id="pr5r0">$Congrats Text$</p>
+        </div>
+        <div class="alert alert-warning" role="alert" id="alert_prac5_no">
+          <h4 class="alert-heading">Uh-oh!</h4>
+          <p id="pr5r1">Unexpected Error</p>
+        </div>
+      </div>
+    </div>
+    <div class="col col-1"></div>
+  </div>
+
+  <!--Switch Cases-->
+  <div class="row mt-5">
+    <div class="col col-1"></div>
+    <div class="col col-10">
+      <!-- Section Header -->
+      <div class="col col-12 mb-5">
+        <h1 class="text-center"><i>switch</i> Statments</h1>
+      </div>
+
+      <!-- Prac1 -->
+      <div class="col col-12 text-center mb-5">
+        <h2>Practice 6</h2>
+        <h3>Switch statment</h3>
+        <h5>Edit practiceSix() in the JS panel and use the slider to test your function.
+          <h5>
+      </div>
+
+      <div class="col col-12 mb-5">
+        <form action="" method="post" name="prac6" class="rounded">
+          <div class="form-group">
+            <label for="range">More or Less Adjectives</label>
+            <input type="range" min="1" max="5" value="3" class="slider" id="range">
+          </div>
+          <button type="submit" name="submit" onclick="checkSix(parseInt($('#range').val())); return false;" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="alert alert-success mt-2" role="alert" id="alert_prac6_yes">
+          <h4 class="alert-heading">Well done!</h4>
+          <p id="pr6r0">$Congrats Text$</p>
+        </div>
+        <div class="alert alert-warning" role="alert" id="alert_prac6_no">
+          <h4 class="alert-heading">Uh-oh!</h4>
+          <p id="pr6r1">Unexpected Error</p>
+        </div>
+      </div>
+    </div>
+    <div class="col col-1"></div>
+  </div>
+</body>
+
+</html>
